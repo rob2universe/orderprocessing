@@ -1,0 +1,406 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.5.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "f289941"
+  },
+  "schemaVersion": 16,
+  "id": "Form_0y2u6te",
+  "components": [
+    {
+      "text": "##### Order Information",
+      "type": "text",
+      "id": "Subheading_0",
+      "layout": {
+        "row": "row_0",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_1",
+      "label": "Order ID",
+      "validate": {
+        "minLength": 5,
+        "maxLength": 10,
+        "required": true
+      },
+      "key": "orderID",
+      "description": "Enter the order ID",
+      "layout": {
+        "row": "row_1",
+        "columns": null
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Order Date",
+      "type": "datetime",
+      "id": "Date_2",
+      "validate": {
+        "required": true
+      },
+      "key": "orderDate",
+      "description": "Select the order date",
+      "layout": {
+        "row": "row_1",
+        "columns": null
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        }
+      ],
+      "type": "select",
+      "id": "Select_3",
+      "label": "Order Type",
+      "validate": {
+        "required": true
+      },
+      "key": "orderType",
+      "description": "Select the order type",
+      "layout": {
+        "row": "row_1",
+        "columns": null
+      }
+    },
+    {
+      "text": "##### Customer Information",
+      "type": "text",
+      "id": "Subheading_4",
+      "layout": {
+        "row": "row_2",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_5",
+      "label": "Customer ID",
+      "validate": {
+        "minLength": 5,
+        "maxLength": 15,
+        "required": true
+      },
+      "key": "customerID",
+      "description": "Enter the customer ID",
+      "layout": {
+        "row": "row_3",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_6",
+      "label": "Customer Name",
+      "validate": {
+        "minLength": 2,
+        "maxLength": 50,
+        "required": true
+      },
+      "key": "customerName",
+      "description": "Enter the customer's name",
+      "layout": {
+        "row": "row_3",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_7",
+      "label": "Phone",
+      "validate": {
+        "minLength": 10,
+        "maxLength": 15,
+        "required": true
+      },
+      "key": "phone",
+      "description": "Enter the customer's phone number",
+      "layout": {
+        "row": "row_3",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_8",
+      "label": "Email",
+      "validate": {
+        "minLength": 10,
+        "maxLength": 50,
+        "required": true
+      },
+      "key": "email",
+      "description": "Enter the customer's email",
+      "layout": {
+        "row": "row_3",
+        "columns": null
+      }
+    },
+    {
+      "text": "##### Service Information",
+      "type": "text",
+      "id": "Subheading_9",
+      "layout": {
+        "row": "row_4",
+        "columns": null
+      }
+    },
+    {
+      "values": [
+        {
+          "value": "Plan A",
+          "label": "Plan A"
+        },
+        {
+          "value": "Plan B",
+          "label": "Plan B"
+        },
+        {
+          "value": "Plan C",
+          "label": "Plan C"
+        }
+      ],
+      "type": "select",
+      "id": "Select_10",
+      "label": "Service Plan",
+      "validate": {
+        "required": true
+      },
+      "key": "servicePlan",
+      "description": "Select the service plan",
+      "layout": {
+        "row": "row_5",
+        "columns": null
+      }
+    },
+    {
+      "type": "number",
+      "id": "Number_11",
+      "label": "Monthly Cost",
+      "decimalDigits": 2,
+      "defaultValue": 100,
+      "appearance": {
+        "prefixAdorner": "$"
+      },
+      "validate": {
+        "min": 50,
+        "max": 500,
+        "step": 10.5,
+        "required": true
+      },
+      "description": "Enter the monthly cost",
+      "layout": {
+        "row": "row_5",
+        "columns": null
+      },
+      "key": "number_11"
+    },
+    {
+      "text": "##### Equipment Information",
+      "type": "text",
+      "id": "Subheading_12",
+      "layout": {
+        "row": "row_6",
+        "columns": null
+      }
+    },
+    {
+      "values": [
+        {
+          "value": "Type A",
+          "label": "Type A"
+        },
+        {
+          "value": "Type B",
+          "label": "Type B"
+        },
+        {
+          "value": "Type C",
+          "label": "Type C"
+        }
+      ],
+      "type": "select",
+      "id": "Select_13",
+      "label": "Equipment Type",
+      "validate": {
+        "required": true
+      },
+      "key": "equipmentType",
+      "description": "Select the equipment type",
+      "layout": {
+        "row": "row_7",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_14",
+      "label": "Model",
+      "validate": {
+        "minLength": 5,
+        "maxLength": 20,
+        "required": true
+      },
+      "description": "Enter the equipment model",
+      "layout": {
+        "row": "row_7",
+        "columns": null
+      },
+      "key": "textfield_14"
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_15",
+      "label": "Serial Number",
+      "validate": {
+        "minLength": 10,
+        "maxLength": 30,
+        "required": true
+      },
+      "description": "Enter the serial number",
+      "layout": {
+        "row": "row_7",
+        "columns": null
+      },
+      "key": "textfield_15"
+    },
+    {
+      "text": "##### Installation Appointment",
+      "type": "text",
+      "id": "Subheading_16",
+      "layout": {
+        "row": "row_8",
+        "columns": null
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Date",
+      "type": "datetime",
+      "id": "Date_17",
+      "validate": {
+        "required": true
+      },
+      "key": "installationDate",
+      "description": "Select the installation date",
+      "layout": {
+        "row": "row_9",
+        "columns": null
+      }
+    },
+    {
+      "subtype": "time",
+      "dateLabel": "Date",
+      "type": "datetime",
+      "id": "Time_18",
+      "timeLabel": "Time",
+      "validate": {
+        "required": true
+      },
+      "key": "installationTime",
+      "description": "Select the installation time",
+      "layout": {
+        "row": "row_9",
+        "columns": null
+      },
+      "timeInterval": 15
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_19",
+      "label": "Technician",
+      "validate": {
+        "minLength": 5,
+        "maxLength": 30,
+        "required": true
+      },
+      "key": "technician",
+      "description": "Enter the technician's name",
+      "layout": {
+        "row": "row_9",
+        "columns": null
+      }
+    },
+    {
+      "text": "##### Billing Information",
+      "type": "text",
+      "id": "Subheading_20",
+      "layout": {
+        "row": "row_10",
+        "columns": null
+      }
+    },
+    {
+      "type": "textfield",
+      "id": "Textfield_21",
+      "label": "Billing Account ID",
+      "validate": {
+        "minLength": 5,
+        "maxLength": 20,
+        "required": true
+      },
+      "key": "billingAccountID",
+      "description": "Enter the billing account ID",
+      "layout": {
+        "row": "row_11",
+        "columns": null
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        }
+      ],
+      "type": "select",
+      "id": "Select_22",
+      "label": "Payment Method",
+      "validate": {
+        "required": true
+      },
+      "key": "paymentMethod",
+      "description": "Select the payment method",
+      "layout": {
+        "row": "row_11",
+        "columns": null
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        }
+      ],
+      "type": "select",
+      "id": "Select_23",
+      "label": "Payment Status",
+      "validate": {
+        "required": true
+      },
+      "key": "paymentStatus",
+      "description": "Select the payment status",
+      "layout": {
+        "row": "row_11",
+        "columns": null
+      }
+    },
+    {
+      "text": "##### Additional Notes",
+      "type": "text",
+      "id": "Subheading_24",
+      "layout": {
+        "row": "row_12",
+        "columns": null
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

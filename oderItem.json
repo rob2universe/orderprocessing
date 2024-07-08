@@ -1,0 +1,54 @@
+{
+  "orderItem": {
+      "orderId": "ORD1000001",
+      "orderDate": "2024-04-01T09:00:00Z",
+      "customer": {
+        "customerId": "CUST0001",
+        "name": "Alice Johnson",
+        "address": {
+          "street": "789 Oak Lane",
+          "city": "Techville",
+          "state": "Techstate",
+          "zipCode": "67890",
+          "country": "USA"
+        },
+        "contact": {
+          "phone": "555-6789363",
+          "email": "alice.johnson@example.com"
+        }
+      },
+      "orderType": "New Installation",
+      "status": "Requested",
+      "servicePlan": {
+        "planId": "PLAN2002",
+        "planName": "Family Data Plan",
+        "monthlyCost": 79.99,
+        "data": "10GB",
+        "minutes": "1000",
+        "textMessages": "Unlimited"
+      },
+      "equipment": [
+        {
+          "equipmentId": "EQUIP101",
+          "type": "Modem",
+          "model": "ModemX200",
+          "serialNumber": "SN2000000001"
+        }
+      ],
+      "installationAppointment": {
+        "appointmentId": "APP2000001",
+        "date": "2024-04-18T14:00:00Z",
+        "technician": {
+          "technicianId": "TECH200",
+          "name": "Mike Brown"
+        },
+        "specialInstructions": ""
+      },
+      "billing": {
+        "billingAccountId": "BILL2001",
+        "paymentMethod": "Credit Card",
+        "paymentStatus": "Paid"
+      },
+      "notes": "Ensure modem is compatible with existing home network."
+   }
+}
